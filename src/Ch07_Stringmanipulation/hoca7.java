@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class hoca7 {
     public static void main(String[] args) {
-        /* indexOf()
+        /** indexOf()
          * char karakter ya da String metnin kacinci indexden basladigini veren bir method dur. Sonuc integer dir.
          * Bu method index'i sorulan char'in String icindeki ilk gorunumunun index'ini return eder
           contains den farkı indexini verir, contains ise true false
@@ -15,14 +15,19 @@ public class hoca7 {
     System.out.println("str.indexOf(\"a\") = " + str.indexOf("a"));//str.indexOf("a") = 0
     System.out.println("str.indexOf(\"l\") = " + str.indexOf("l"));//str.indexOf("l") = 1
     //o karekterin ilk kullanildigi index
+        // bir sürü l var ama ilk bulduğunu alıyor
 
     System.out.println("str.indexOf(\"L\") = " + str.indexOf("L"));//str.indexOf("L") = -1
 
     System.out.println("str.indexOf(\"all\") = " + str.indexOf("all"));//str.indexOf("all") = 0
+        // kelime yazdın ama başlangıç indexsini veriyor 0 çünkü a nın indexsi 0
 
-    System.out.println("str.indexOf(\"is\") = " + str.indexOf("is"));//str.indexOf("is") = 4
+
+        System.out.println("str.indexOf(\"is\") = " + str.indexOf("is"));//str.indexOf("is") = 4
+        // i nin indexi 4
 
     System.out.println("str.indexOf(\"All\") = " + str.indexOf("All"));//str.indexOf("All") = -1
+        // büyük A yok olmayanlar -1 alıyor
 
     /** lastIndexOf()
      *  String içinde aranan karakter(ler)in sondan itibaren ilk indexini verır
@@ -34,6 +39,7 @@ public class hoca7 {
     String name = "Jack Nicholson";
     System.out.println("name.indexOf(\"o\") = " + name.indexOf("o"));//name.indexOf("o") = 9
     System.out.println("name.lastIndexOf(\"o\") = " + name.lastIndexOf("o"));//name.lastIndexOf("o") = 12
+        // lastindexof ters taraftan arıyor index numarası aynı 1. o 9 index 2. o on iki 12
 
     System.out.println("name.indexOf(\"k\") = " + name.indexOf("k"));//name.indexOf("k") = 3
     System.out.println("name.lastIndexOf(\"k\") = " + name.lastIndexOf("k"));//name.lastIndexOf("k") = 3
